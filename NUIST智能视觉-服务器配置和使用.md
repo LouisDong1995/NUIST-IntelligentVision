@@ -94,6 +94,8 @@ sudo systemctl start xrdp
 
 3.切换至自己用户和目录下：`su - username `
 
+4.代码数据集等放在`/mnt/sda`下
+
 **远程桌面登录图形界面**：
 
 1.windows远程桌面连接/mac下载Microsoft Remote Desktop，输入ip，用户名和密码
