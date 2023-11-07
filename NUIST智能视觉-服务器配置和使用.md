@@ -88,13 +88,20 @@ sudo systemctl start xrdp
 
 **ssh命令行连接**：
 
-1.通ssh连接至公共用户，上面3测试
+1.通ssh连接至公共用户，见上面3测试
 
 2.添加自己的账户并加入conda组中，见上面5测试
 
 3.切换至自己用户和目录下：`su - username `
 
-4.代码数据集等放在`/mnt/sda`下
+4.创建RDP会话界面：
+
+~~~
+touch .xsession
+nano .xsession
+~~~
+
+插入`echo "xfce4-session" | tee .xsession`确保远程登录连接到图形界面
 
 **远程桌面登录图形界面**：
 
@@ -103,3 +110,7 @@ sudo systemctl start xrdp
 ### 外网用户：
 
 向日葵
+
+### 注意事项：
+
+数据集代码等放在`/mnt/sda`下面
